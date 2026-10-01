@@ -102,25 +102,31 @@ class BibleDB:
 
 
 def longest_book_suffix(name):
-    """从候选串中找最长可解析书卷名后缀，返回 (book, matched_len)。"""
+    """从候选串中找最长可解析书卷名后缀，返回 (book, matched_sub)。"""
     name = name.strip().strip("读见参按如在的与和跟（(")
     if not name:
-        return None, 0
+        return None, ""
     for end in range(0, len(name)):
         sub = name[end:]
         b = book_num(sub)
         if b:
-            return b, len(name) - end
-    return None, 0
+            return b, sub
+    return None, ""
 
 
 def parse_refs(text):
     """产出 (start_pos, book, c1, v1, c2, v2, raw)。"""
     refs = []
     for m in ZH_REF.finditer(text):
-        b, _len = longest_book_suffix(m.group(1))
+        b, sub = longest_book_suffix(m.group(1))
         if not b:
             continue
+        # 单字简称保护：命中的单字（如"罗"）前紧邻中文字符时（保罗/罗马人），不视为书卷名
+        if len(sub) == 1 and "\u4e00" <= sub <= "\u9fff":
+            name_start = m.start(1) + m.group(1).rfind(sub)
+            prev = text[name_start - 1] if name_start > 0 else ""
+            if "\u4e00" <= prev <= "\u9fff":
+                continue
         c1, v1 = int(m.group(2)), int(m.group(3))
         if m.group(5):
             c2 = int(m.group(4)) if m.group(4) else c1
@@ -169,15 +175,17 @@ def nearby_quote(text, pos, span=30):
         if idx != -1:
             end = before.find(right, idx + 1)
             if end != -1 and len(before) - end - 1 <= span:
-                c = before[idx + 1:end].strip()
-                if len(c) >= 8:
-                    candidates.append((len(before) - end, c))
+                # 引文与标注之间不得跨行，防止错配到上一条引文
+                if "\n" not in before[end + 1:]:
+                    c = before[idx + 1:end].strip()
+                    if len(c) >= 8:
+                        candidates.append((len(before) - end, c))
     after = text[pos:pos + span + 200]
     for left, right in QUOTE_PAIRS:
         idx = after.find(left)
         if idx != -1 and idx <= span:
             end = after.find(right, idx + 1)
-            if end != -1:
+            if end != -1 and "\n" not in after[:idx]:
                 c = after[idx + 1:end].strip()
                 if len(c) >= 8:
                     candidates.append((idx, c))

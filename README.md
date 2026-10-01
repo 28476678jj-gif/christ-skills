@@ -70,10 +70,22 @@ python tools/lint_skill.py skills/02-exegesis/expository-passage-study
 
 ## 类目地图
 
-现登记 19 个一级类目，分 P0 至 P3 四批落地，全表见 `taxonomy.md`。当前已含样板技能：
+现登记 19 个一级类目，分 P0 至 P3 四批落地，全表见 `taxonomy.md`。当前已含技能：
 
 - `skills/02-exegesis/expository-passage-study`：逐段解经研究（P0）
 - `skills/03-topical-study/topical-bible-study`：主题查经串珠（P0）
+- `skills/04-preaching/sermon-prep`：讲章预备（P1 首发），从经文到逐字稿全流程，附[示例讲章](skills/04-preaching/sermon-prep/examples/sermon-phil-1-21.md)
+
+## 快速开始：讲章预备
+
+1. 安装：把 `skills/04-preaching/sermon-prep` 目录复制到你的宿主技能目录（WorkBuddy 用 `~/.workbuddy/skills/`，Claude Code 用 `~/.claude/skills/`），并把 `data/bibles/` 与 `tools/` 一并放在可读位置（技能内的经文检索指向它们）。
+2. 在宿主中对新对话直接说：「下周主日我讲 腓立比书 1:21，帮我预备讲章，25 分钟」。
+3. 宿主按技能流程产出四段式讲章预备包：解经摘要、命题与大纲、逐字稿、时长估算与上台提示。成品长什么样，先看[示例产出](skills/04-preaching/sermon-prep/examples/sermon-phil-1-21.md)。
+4. 重要：产出是预备草稿。讲员须自己祷告消化、按自己的声音重写后再上台（技能内对此有硬性提醒）。
+
+## 支持本项目
+
+核心库永久免费开源（马太福音 10:8）；维护劳动接受支持（提摩太前书 5:18）。捐赠渠道与付费服务（培训工作坊、定制搭建、伴读材料）的原则与明细见 `SPONSORS.md`，赞助按钮配置见 `.github/FUNDING.yml`。传播关键词与合规边界见 `marketing/keywords.md`。
 
 ## 合规与免责
 
