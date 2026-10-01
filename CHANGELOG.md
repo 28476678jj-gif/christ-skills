@@ -10,6 +10,7 @@
 
 ### Added
 
+- 参考书目机制 `references/BIBLIOGRAPHY.md`：登记维护者提供的牧者与学者著作（首批 14 种），明确版权边界与技能写作参考规则。
 - 地基四件套：`STATEMENT_OF_FAITH.md`（使徒信经与尼西亚信经为锚）、`DOCTRINE_POLICY.md`（core/disputed/sensitive 三级标注与审核规则）、`CITATION_STANDARD.md`（引用规范与六十六卷对照表）、`GLOSSARY.md`（术语表）。
 - 类目总表 `taxonomy.md`：19 个一级类目，P0 至 P3 四批路线。
 - 技能统一模板 `templates/SKILL_TEMPLATE.md`。
