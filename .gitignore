@@ -1,0 +1,26 @@
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node（若后续工具链用到）
+node_modules/
+
+# 工作暂存
+scratch/
+*.log
+
+# WorkBuddy 工作区数据（私有，不进开源仓库）
+.workbuddy/
+
+# 版权数据一律不进仓库（使用者本地自装）
+data/private/
+*.CUV.bible
+RCUV*.bible
