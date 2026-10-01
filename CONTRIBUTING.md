@@ -30,7 +30,7 @@ python tools/verse_check.py skills/<类目>/<你的技能>/SKILL.md
 6. **审核。**
    - core 级：维护者审核，与信经冲突直接拒收。
    - disputed 级：维护者加一名复核人，复核人记录进 `reviewed_by`。
-   - sensitive 级：必须具名人类审核，AI 审核不算数；`reviewed_by`、`reviewed_at` 缺一不合并。
+   - sensitive 级：必须具名人类审核，自动审核不算数；`reviewed_by`、`reviewed_at` 缺一不合并。
 
 ## 修改现有技能
 

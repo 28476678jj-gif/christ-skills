@@ -8,6 +8,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- 全库定位措辞调整：移除 README、marketing、SPONSORS、DOCTRINE_POLICY、CONTRIBUTING、CITATION_STANDARD 及讲道技能中的"AI/模型"宣传字眼，统一表述为"研经技能库/工具"。内容权威表述为：圣经、释经文献与古今牧者著作；`claude-code`/`agent-skills`/`workbuddy` 作为宿主功能词保留。
+
 ### Added
 
 - P1 首发技能：`skills/04-preaching/sermon-prep`（讲章预备全流程：解经摘要、命题大纲、逐字稿、时长校准），附示例产出 `examples/sermon-phil-1-21.md`（腓立比书 1:21 十分钟短讲）。
