@@ -163,11 +163,11 @@ def normalize(s):
     return s
 
 
-def nearby_quote(text, pos, span=30):
+def nearby_quote(text, pos, span=5):
     """只认与引用标注紧邻的引号文本（前后各 span 字符内）。
 
     「引文」（书卷 X:Y） 与 书卷 X:Y：「引文」 两种格式覆盖；
-    远处的强调/反语引号不参与比对，避免误报。"""
+    引号与标注之间须几乎无间隔，行文中的强调引号与远处引文不参与比对。"""
     candidates = []
     before = text[max(0, pos - span - 200):pos]
     for left, right in QUOTE_PAIRS:
