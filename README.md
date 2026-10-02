@@ -75,6 +75,16 @@ python tools/lint_skill.py skills/02-exegesis/expository-passage-study
 - `skills/02-exegesis/expository-passage-study`：逐段解经研究（P0）
 - `skills/03-topical-study/topical-bible-study`：主题查经串珠（P0）
 - `skills/04-preaching/sermon-prep`：讲章预备（P1 首发），从经文到逐字稿全流程，附[示例讲章](skills/04-preaching/sermon-prep/examples/sermon-phil-1-21.md)
+- `skills/07-prayer-devotion/daily-devotion`：每日灵修默想，含祷告指引与当日践行，附[今日灵修示例](devotions/2026-10-02.md)
+- `skills/13-pastoral-care/spiritual-encouragement`：属灵勉励，针对疲乏、灰心、疾病、失去等处境给出经文支撑的安慰与下一步
+
+迭代路线（每日更新方向、待建模块、推广要点）见 `docs/ROADMAP.md`。
+
+## 快速开始：每日灵修
+
+1. 安装 `skills/07-prayer-devotion/daily-devotion` 到宿主技能目录。
+2. 在宿主中说：「腓立比书 4:6-7 灵修」，或不给经文直接说「给我今天的灵修」。
+3. 得到经文原文、读三遍的引导、默想三段（神是怎样的一位、我今天的情形、今天要我做的一件）、祷告方向、今日一步。成品见[示例](devotions/2026-10-02.md)。
 
 ## 快速开始：讲章预备
 

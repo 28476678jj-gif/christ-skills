@@ -10,13 +10,13 @@
 | 04 | preaching | 讲道 | 经文选取、讲章结构、应用落点、引言与结论 | P1 |
 | 05 | bible-reading-methods | 读经方法 | 归纳式查经、速读计划、背诵、读经日历 | P1 |
 | 06 | spiritual-growth | 生命成长 | 认罪悔改、品格塑造、成圣操练 | P1 |
-| 07 | prayer-devotion | 祷告与灵修 | 祷告框架、灵修默想、禁食 | P1 |
+| 07 | prayer-devotion | 祷告与灵修 | 祷告框架、灵修默想、禁食 | **P1（已建 daily-devotion）** |
 | 08 | evangelism | 福音布道 | 个人布道、福音框架、慕道问答、见证分享 | P1 |
 | 09 | wisdom-literature | 智慧 | 箴言/约伯记/传道书专题、决策智慧 | P1 |
 | 10 | apologetics | 护教与信仰理性 | 苦难问题、信仰与科学、圣经可靠性 | P2 |
 | 11 | practical-living | 生活实践 | 婚姻亲子、职场、金钱观、时间观 | P2 |
 | 12 | church-life-worship | 教会生活与敬拜 | 敬拜带领、圣礼常识、教会治理常识 | P2 |
-| 13 | pastoral-care | 教牧关怀 | 哀伤陪伴、临终关怀、危机辅导入门 | P2 |
+| 13 | pastoral-care | 教牧关怀 | 哀伤陪伴、临终关怀、危机辅导入门 | **P2（已建 spiritual-encouragement）** |
 | 14 | denominations-figures | 宗派与人物 | 宗派谱系、神学家生平与主张 | P2 |
 | 15 | classic-commentaries | 古圣先贤注解 | 公有领域古典注解（马太亨利、加尔文等）集成 | P2 |
 | 16 | creeds-church-history | 信经与教会历史 | 大公会议、信经史、宗教改革、中国教会史 | P2 |
@@ -27,6 +27,7 @@
 说明：
 
 - 锚点类规范文件（信仰告白、教义政策、引用规范、术语表）是仓库根目录文件，不构成技能类目。
+- 迭代节奏、每日更新方向与推广要点见 `docs/ROADMAP.md`。
 - "见证分享"体量尚小，作为二级类目挂在 08 福音布道下，长出来再升级。
 - P3 三个类目（17-19）一律按 `DOCTRINE_POLICY.md` sensitive 级管理。
 

@@ -15,6 +15,8 @@
 ### Added
 
 - P1 首发技能：`skills/04-preaching/sermon-prep`（讲章预备全流程：解经摘要、命题大纲、逐字稿、时长校准），附示例产出 `examples/sermon-phil-1-21.md`（腓立比书 1:21 十分钟短讲）。
+- 灵修与勉励两个技能：`skills/07-prayer-devotion/daily-devotion`（经文默想、祷告指引、今日一步，附 `devotions/2026-10-02.md` 示例）；`skills/13-pastoral-care/spiritual-encouragement`（处境化勉励，含危机情形转介边界）。
+- `docs/ROADMAP.md`：七日更新节奏（主日停更）、待建模块清单、对外推广的五条核心价值、成熟度验收清单、同步机制。
 - 变现与传播配置：`SPONSORS.md`（核心免费、服务收费的原则与平衡声明）、`.github/FUNDING.yml`（赞助按钮模板）、`marketing/keywords.md`（GitHub Topics、SEO 与中文传播关键词包）。
 - README 新增「快速开始：讲章预备」与「支持本项目」两节。
 - 参考书目机制 `references/BIBLIOGRAPHY.md`：登记维护者提供的牧者与学者著作（首批 14 种），明确版权边界与技能写作参考规则。
