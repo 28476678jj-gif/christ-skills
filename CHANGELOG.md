@@ -19,6 +19,9 @@
 - `docs/ROADMAP.md`：七日更新节奏（主日停更）、待建模块清单、对外推广的五条核心价值、成熟度验收清单、同步机制。
 - 变现与传播配置：`SPONSORS.md`（核心免费、服务收费的原则与平衡声明）、`.github/FUNDING.yml`（赞助按钮模板）、`marketing/keywords.md`（GitHub Topics、SEO 与中文传播关键词包）。
 - README 新增「快速开始：讲章预备」与「支持本项目」两节。
+- 对外发布用的中性工具技能（neutral 级，不含教义内容）：`skills/00-data-tools/` 下 `bible-verse-verifier`（经文引用校验）、`bible-data-builder`（公有领域数据构建）、`bible-reference-formatter`（引用格式规范化），各附自包含 scripts 与版权/免责说明，用于发布到 SkillHub。
+- 教义标注体系新增 neutral 级（工具型技能，无教义主张，按工具标准审核）；`lint_skill.py` 对其豁免强制检索声明检查。
+- `tools/format_references.py`：引用格式规范化工具（繁简、全半角、简称/全名互转，预览与改写两种模式）。
 - 参考书目机制 `references/BIBLIOGRAPHY.md`：登记维护者提供的牧者与学者著作（首批 14 种），明确版权边界与技能写作参考规则。
 
 ### Fixed

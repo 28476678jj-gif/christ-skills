@@ -20,7 +20,7 @@ import re
 import sys
 
 REQUIRED_FIELDS = ["name", "description", "doctrine_status", "version", "sources", "bible_anchor"]
-DOCTRINE_LEVELS = {"core", "disputed", "sensitive"}
+DOCTRINE_LEVELS = {"core", "disputed", "sensitive", "neutral"}
 REQUIRED_SECTIONS = ["用途", "触发场景", "输入与输出", "工作流程", "经文依据", "争议标注", "质量校验清单", "免责与边界"]
 RETRIEVAL_HINTS = ["不得凭记忆", "必须检索", "强制检索", "禁止凭记忆"]
 FORBIDDEN_EXT = {".exe", ".bat", ".cmd", ".ps1", ".com"}
@@ -95,7 +95,8 @@ def lint_dir(path):
         if not re.search(rf"^##\s+.*{re.escape(section)}", body, re.M):
             errors.append(f"{skill_md}: 缺少必备章节: ## {section}")
 
-    if not any(hint in body for hint in RETRIEVAL_HINTS):
+    # neutral 级（工具型）不产出经文引用，豁免强制检索声明
+    if status != "neutral" and not any(hint in body for hint in RETRIEVAL_HINTS):
         errors.append(f"{skill_md}: 工作流程未声明强制经文检索（需含 {'/'.join(RETRIEVAL_HINTS)} 之一）")
 
     for root, _dirs, files in os.walk(path):
