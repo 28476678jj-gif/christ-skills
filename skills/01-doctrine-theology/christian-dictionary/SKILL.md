@@ -8,8 +8,8 @@ license: MIT
 description: 检索《基督教大辞典》（上海辞书出版社，2010）已 OCR 核对的核心词条。
 doctrine_status: disputed
 version: 0.2.0
-reviewed_by: ""
-reviewed_at: ""
+reviewed_by: 老K
+reviewed_at: 2026-10-10
 sources:
   - references/christian-dictionary/front-matter-notes.md
   - references/christian-dictionary/structure-index.md
