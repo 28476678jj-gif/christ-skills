@@ -1,6 +1,11 @@
 ---
 name: christian-dictionary
-description: 检索《基督教大辞典》（上海辞书出版社，2010）已 OCR 核对的核心词条，含三位一体、上帝、圣灵、圣经、救赎等旗舰教义的辞典释义与页码定位；并给出绪论教义综述与凡例体例。
+slug: christian-dictionary
+displayName: 《基督教大辞典》核心教义检索
+summary: 检索《基督教大辞典》（上海辞书出版社，2010）经 OCR 逐页核对的核心词条：三位一体、上帝、圣经、圣灵、救赎等旗舰教义的辞典释义与页码定位，并给出绪论教义综述与凡例体例。
+tags: [christianity, doctrine, dictionary, chinese, reference]
+license: MIT
+description: 检索《基督教大辞典》（上海辞书出版社，2010）已 OCR 核对的核心词条。
 doctrine_status: disputed
 version: 0.2.0
 reviewed_by: ""
