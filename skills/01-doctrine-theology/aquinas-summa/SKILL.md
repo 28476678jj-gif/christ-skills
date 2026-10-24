@@ -20,7 +20,7 @@ tags: [christianity, doctrine, thomism, aquinas, reference]
 license: MIT
 description: 检索托马斯·阿奎那《神学大全》的已整理知识。当团队需要调用或核对《神学大全》中的教义与论证——如五路证明、神的单纯性、三位一体内在出发、人的灵魂与终极目的、法律（永恒法/自然法/人法/神法）、恩宠、信德、爱德、道成肉身——或需要在《大全》590余问的结构中定位某一主题时使用。不适用于：经文本身的解经（用 02-exegesis）、讲章撰写（用 04-preaching）、或本库列为「争议级/敏感级」且需并列宗派立场的议题（按本技能「争议标注」段处理）。
 doctrine_status: core
-version: 0.1.0
+version: 0.2.0
 reviewed_by: 老K
 reviewed_at: 2026-10-10
 sources:

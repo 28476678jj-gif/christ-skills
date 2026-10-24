@@ -20,7 +20,7 @@ tags: [christianity, doctrine, dictionary, chinese, reference]
 license: MIT
 description: 检索《基督教大辞典》（上海辞书出版社，2010）已 OCR 核对的核心词条。
 doctrine_status: disputed
-version: 0.2.0
+version: 0.3.0
 reviewed_by: 老K
 reviewed_at: 2026-10-10
 sources:

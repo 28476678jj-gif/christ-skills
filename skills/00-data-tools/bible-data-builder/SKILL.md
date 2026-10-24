@@ -16,7 +16,7 @@ author: 军哥
 description: 把公有领域圣经译本（USFX XML 格式）构建成本地 SQLite 数据库，供经文检索与引用校验使用。用户需要本地经文数据库、想新增译本、重建或修复数据，或要给引用校验器准备数据底座时使用。产出与 biblemate 兼容的 .bible 数据库（66 卷结构），离线可用，不依赖任何外部接口。只处理公有领域文本，不处理版权译本。
 slug: bible-data-builder
 displayName: 公有领域圣经数据构建器
-version: 1.0.0
+version: 1.1.0
 summary: 将 USFX 格式的公有领域圣经译本构建为本地 SQLite 数据库（biblemate 兼容），离线可查、可用于引用核验。
 tags:
   - bible
