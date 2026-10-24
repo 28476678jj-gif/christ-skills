@@ -1,8 +1,17 @@
 ---
 name: spiritual-encouragement
+slug: spiritual-encouragement
+displayName: 属灵勉励
 description: 针对具体处境给出以经文为依据的属灵勉励。用户描述自己或他人的光景（疲乏、灰心、服事枯干、疾病中的惧怕、关系受伤、失去亲人、失业、长期看不到果效），希望得到不是空话的安慰与力量时使用。产出经文、对准处境的一句话、三方面的勉励、祷告方向、可行的一步。危机情形（伤害自己的念头、严重抑郁、家暴与虐待、精神疾病发作）不适用纯属灵勉励，技能会转为引导寻求专业帮助与牧者面谈。
 doctrine_status: core
 version: 0.1.0
+summary: 针对具体处境给出以经文为依据的属灵勉励：对准处境的一句话、三方面勉励、祷告方向与可行的一步；危机情形引导寻求专业帮助。
+tags:
+  - bible
+  - pastoral-care
+  - encouragement
+  - christianity
+license: MIT
 reviewed_by: ""
 reviewed_at: ""
 sources:

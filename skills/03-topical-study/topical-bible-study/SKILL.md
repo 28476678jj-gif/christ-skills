@@ -1,8 +1,17 @@
 ---
 name: topical-bible-study
+slug: topical-bible-study
+displayName: 主题串珠查经
 description: 围绕一个主题做跨书卷的串珠查经。用户给出一个主题（如"恩典""苦难""金钱观""祷告""圣灵的工作"），想系统了解圣经整体怎么讲这个主题时使用。产出旧约到新约的启示脉络、锚点经文深读、神学命题总结与应用。不适用于单一经段的逐节解释（用 expository-passage-study）、只要某节经文原文（直接检索）或人物/书卷背景速查（用词典类技能）。
 doctrine_status: core
 version: 0.1.0
+summary: 围绕一个主题做跨书卷的串珠查经：旧约到新约的启示脉络、锚点经文深读、神学命题总结与应用。
+tags:
+  - bible
+  - topical-study
+  - scripture
+  - christianity
+license: MIT
 reviewed_by: ""
 reviewed_at: ""
 sources:
@@ -10,7 +19,7 @@ sources:
   - 渐进启示的正典读法（旧约应许、新约成全的脉络框架）
   - 公有领域主题查经传统（如 Nave's Topical Bible 的主题分类思路，仅作类目参照）
   - 用户本地 biblemate 词典与注释数据库（可选，存在时优先调用）
-bible_anchor: 提摩太后书 3:16-17
+bible_anchor: 罗马书 12:2
 ---
 
 # 主题查经串珠

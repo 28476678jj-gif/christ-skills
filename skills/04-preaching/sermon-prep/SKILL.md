@@ -1,8 +1,17 @@
 ---
 name: sermon-prep
+slug: sermon-prep
+displayName: 讲章预备
 description: 把一段经文预备成一篇可上台讲的讲章。用户给出经文范围与场合（主日崇拜、团契查经、丧礼婚礼、节期聚会、小组分享），需要从解经到命题、大纲、逐字稿的全流程帮助时使用。本技能走经文驱动式讲道（expository preaching）：讲章结构服从经文结构，应用从经文里长出来。不适用于学术解经报告（用 expository-passage-study）、跨卷主题查经（用 topical-bible-study，其产出可作本技能输入）或讲章之外的信仰写作。
 doctrine_status: core
 version: 0.1.0
+summary: 把一段经文预备成可上台讲的讲章，走经文驱动式讲道：从解经到命题、大纲、逐字稿全流程。
+tags:
+  - bible
+  - preaching
+  - sermon
+  - christianity
+license: MIT
 reviewed_by: ""
 reviewed_at: ""
 sources:
@@ -10,7 +19,7 @@ sources:
   - 经文驱动讲道法传统（命题式讲道的 big idea 方法，参考方法不引用成稿）
   - 维护者《从腓立比书看基督》查经材料（中文口述风格参照）
   - 用户本地 biblemate 注释与词典数据库（可选，存在时优先调用）
-bible_anchor: 提摩太后书 4:2
+bible_anchor: 哥林多前书 2:2
 ---
 
 # 讲章预备

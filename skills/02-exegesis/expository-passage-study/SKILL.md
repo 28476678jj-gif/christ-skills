@@ -1,8 +1,17 @@
 ---
 name: expository-passage-study
+slug: expository-passage-study
+displayName: 经文逐段深度解经
 description: 对一段经文做逐段解经研究。用户给出一处经文范围（如"研经罗马书 8:1-11""帮我细看诗篇 23""创世记 22 章什么意思"），希望得到有文本观察、有历史背景、有原文词研、有正典脉络、最终落到基督与福音和具体应用的深度研究时使用。不适用于只需经文原文（直接用检索工具）、主题式串珠查经（用 topical-bible-study）或讲章撰写（用讲道类技能）的场景。
 doctrine_status: core
 version: 0.1.0
+summary: 对一段经文做逐段解经研究：文本观察、历史背景、原文词研、正典脉络，落到基督与福音及具体应用。
+tags:
+  - bible
+  - exegesis
+  - passage-study
+  - christianity
+license: MIT
 reviewed_by: ""
 reviewed_at: ""
 sources:
@@ -10,7 +19,7 @@ sources:
   - 文法历史解经法（grammatical-historical method，见 GLOSSARY.md）
   - 公有领域古典解经传统（马太亨利注释等，作背景参照而非定论）
   - 用户本地 biblemate 注释与词典数据库（可选，存在时优先调用）
-bible_anchor: 路加福音 24:27
+bible_anchor: 以弗所书 3:14-21
 ---
 
 # 逐段解经研究
