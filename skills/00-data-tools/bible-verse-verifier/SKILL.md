@@ -67,7 +67,7 @@ bible_anchor: 不适用（neutral 级工具技能，不含教义内容）
 
 ## 工作流程
 
-1. **准备数据库。** 校验所依据的经文一律来自数据库，不由模型凭记忆生成。三种来源任选其一，按顺序查找：环境变量 `CHRIST_SKILLS_DATA` 指向的目录；技能或仓库内的 `data/bibles/`；用户本地 `~/biblemate/data/bibles`。数据库是与 biblemate 兼容的 SQLite，表结构 `Verses(Book INT, Chapter INT, Verse INT, Scripture TEXT)`，Book 为新教正典 1 至 66 的序号。没有数据库时用 `bible-data-builder` 从公有领域源数据构建。
+1. **准备数据库。** 校验所依据的经文一律来自数据库，不由模型凭记忆生成。三种来源任选其一，按顺序查找：环境变量 `CHRIST_SKILLS_DATA` 指向的目录；本技能 `scripts/` 同级目录下的经文库；用户本地 biblemate 数据目录。数据库是与 biblemate 兼容的 SQLite，表结构 `Verses(Book INT, Chapter INT, Verse INT, Scripture TEXT)`，Book 为新教正典 1 至 66 的序号。没有数据库时，可用本套件中的圣经库构建脚本从公有领域源数据构建。
 2. **运行校验。**
 
 ```bash

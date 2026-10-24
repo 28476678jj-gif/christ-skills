@@ -32,7 +32,7 @@ reviewed_by: ""
 reviewed_at: ""
 sources:
   - 书卷映射表 scripts/bible_books.py（六十六卷，新教正典）
-  - 公有领域源数据集 djwisdom/open-bibles（USFX XML）
+  - 公有领域源数据集（USFX XML 格式，含简体和合本）
 bible_anchor: 不适用（neutral 级工具技能，不含教义内容）
 ---
 
@@ -64,20 +64,20 @@ bible_anchor: 不适用（neutral 级工具技能，不含教义内容）
 ## 工作流程
 
 1. **确认版权状态（第一步，也是硬门槛）。** 数据库里的经文一律来自源数据文件，不由模型凭记忆生成。只处理公有领域或明确自由许可的译本。仍在版权期内的译本（例如和合本修订版、新译本、现代中文译本、ESV、NIV 等）不构建、不入库、不分发。使用者若在本机为个人使用自行处理，请自行确认授权范围。
-2. **取得源文件。** 公有领域译本数据集（如 djwisdom/open-bibles 仓库）提供 USFX XML，例如简体和合本 `chi-cuv-simp.usfx.xml`。下载后放在 `data/sources/`。
-3. **构建。**
+2. **取得源文件。** 公有领域译本数据集（如 GitHub 上的 open-bibles 仓库）提供 USFX XML，例如简体和合本数据集。用 --src 指向下载到的源文件路径（路径由使用者自定，存于本地工作目录即可）。
+3. **构建。** 用 --src 指定源文件、--out 指定输出数据库路径（均为使用者本地路径）：
 
 ```bash
 python scripts/build_bible_db.py \
-  --src data/sources/chi-cuv-simp.usfx.xml \
-  --out data/bibles/CUVS1919.bible \
+  --src <本地源文件路径>.usfx.xml \
+  --out <本地输出路径>.bible \
   --abbr CUVS1919 \
   --title "和合本 1919（简体）" \
   --license "Public Domain"
 ```
 
 4. **抽查验证。** 构建完至少核对四处：创世记 1:1、诗篇 23:1、约翰福音 3:16、启示录 22:21。抽查能发现编码、节号错位、脚注误收三类问题。
-5. **接入使用。** 把数据库放到 `data/bibles/`，或设环境变量 `CHRIST_SKILLS_DATA` 指向该目录，引用校验器会自动找到它。
+5. **接入使用。** 把生成的数据库放入任一目录，并设环境变量 `CHRIST_SKILLS_DATA` 指向该目录，引用校验器会自动找到它。
 
 ## 数据格式说明
 
