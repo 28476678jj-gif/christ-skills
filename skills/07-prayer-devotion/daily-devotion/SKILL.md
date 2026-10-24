@@ -1,5 +1,18 @@
 ---
 name: daily-devotion
+display_name: 每日灵修默想
+display_name_en: Daily Devotion
+description_zh: 每天一段经文的灵修默想，含祷告指引与当日践行，约 600 至 1200 字，读完约 5 至 10 分钟。
+description_en: A daily devotional meditation on one passage, with prayer guidance and a concrete practice, about 600 to 1200 words, five to ten minutes to read.
+examples_zh:
+  - "今天灵修用什么经文"
+  - "腓立比书 4:6-7 灵修"
+  - "帮我安静一下"
+examples_en:
+  - "What passage should I meditate on today?"
+  - "Devotional on Philippians 4:6-7"
+  - "Help me quiet down"
+author: 军哥
 slug: daily-devotion
 displayName: 每日灵修默想
 description: 每天一段经文的灵修默想，含祷告指引与当日践行。用户给出经文（如"腓立比书 4:6-7 灵修"），或说"今天灵修用什么""给我今天的灵修默想""帮我安静一下"，需要能坐下来慢慢读、慢慢想的短材料时使用。产出约 600 至 1200 字，读完约 5 至 10 分钟。不适用于学术研究（用 expository-passage-study）、讲章预备（用 sermon-prep）或跨卷主题查经（用 topical-bible-study）。

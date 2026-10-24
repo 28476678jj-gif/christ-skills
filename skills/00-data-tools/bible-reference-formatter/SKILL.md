@@ -1,5 +1,18 @@
 ---
 name: bible-reference-formatter
+display_name: 经文引用格式化器
+display_name_en: Bible Reference Formatter
+description_zh: 把经文引用统一格式化为和合本标准写法，支持中文书卷名、章节范围与多种输出样式。
+description_en: Format scripture references into the standard Chinese Union Version style, supporting Chinese book names, verse ranges and multiple output styles.
+examples_zh:
+  - "把「罗8:1」格式化为规范引用"
+  - "批量处理文稿里的经文引用"
+  - "统一中英文经文引用格式"
+examples_en:
+  - "Format a raw verse reference into standard form"
+  - "Batch-process scripture references in a document"
+  - "Unify Chinese and English citation styles"
+author: 军哥
 description: 把文档里写法不一的圣经经文引用统一成规范格式。用户要整理稿件、统一书卷名与冒号写法、把简称批量换成全名（或相反），或在发布前清理引用格式时使用。基于六十六卷书卷映射表做识别与替换，只改引用标注本身，不改动任何经文原文。
 slug: bible-reference-formatter
 displayName: 经文引用格式规范化

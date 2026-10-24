@@ -1,5 +1,18 @@
 ---
 name: bible-verse-verifier
+display_name: 经文引用校验器
+display_name_en: Bible Verse Verifier
+description_zh: 扫描文档中的圣经经文引用，对照本地数据库核验经节是否存在、引文是否与原文一致，防止编造或误引。
+description_en: Scan scripture references in a document and verify against a local Bible database that verses exist and quotations match, preventing fabricated or misquoted verses.
+examples_zh:
+  - "提交前检查文稿里的经文是否真实"
+  - "找出引用错位的地方"
+  - "批量核验一份讲义的所有经文"
+examples_en:
+  - "Check whether scripture citations in a draft are real"
+  - "Find misaligned quotes"
+  - "Verify every verse in a study guide"
+author: 军哥
 description: 核验文档中的圣经经文引用是否真实存在、引文是否与原文一致。用户写完引用想自检、要在提交前跑一次检查、怀疑某处"经文"是编造的，或想给文档加一道引用校验闸门时使用。扫描 markdown 文件，对照本地 SQLite 数据库逐条核验，输出错误与警告清单。只做文本与数据核验，不产出任何信仰或教义内容。
 slug: bible-verse-verifier
 displayName: 经文引用校验器

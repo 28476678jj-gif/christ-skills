@@ -1,5 +1,18 @@
 ---
 name: bible-data-builder
+display_name: 圣经数据库构建器
+display_name_en: Bible Database Builder
+description_zh: 把纯文本圣经书卷转成本地 SQLite 查询库，含书卷表、章节表与经文表，一条命令生成。
+description_en: Build a local SQLite Bible database from plain-text book files, with book, chapter and verse tables, in one command.
+examples_zh:
+  - "用 build_bible_db.py 生成圣经数据库"
+  - "把多卷圣经文本合并成可查询的库"
+  - "重建本地经文检索索引"
+examples_en:
+  - "Build the Bible database with build_bible_db.py"
+  - "Merge multiple Bible text files into a queryable database"
+  - "Rebuild the local verse search index"
+author: 军哥
 description: 把公有领域圣经译本（USFX XML 格式）构建成本地 SQLite 数据库，供经文检索与引用校验使用。用户需要本地经文数据库、想新增译本、重建或修复数据，或要给引用校验器准备数据底座时使用。产出与 biblemate 兼容的 .bible 数据库（66 卷结构），离线可用，不依赖任何外部接口。只处理公有领域文本，不处理版权译本。
 slug: bible-data-builder
 displayName: 公有领域圣经数据构建器

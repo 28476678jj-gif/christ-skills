@@ -1,5 +1,18 @@
 ---
 name: expository-passage-study
+display_name: 经文逐段深度解经
+display_name_en: Expository Passage Study
+description_zh: 对一段经文做逐段解经研究：文本观察、历史背景、原文词研、正典脉络，最终落到基督与福音及具体应用。
+description_en: "In-depth expository study of a passage: textual observation, historical background, original-language work, canonical flow, ending with Christ, the gospel and concrete application."
+examples_zh:
+  - "研经罗马书 8:1-11"
+  - "帮我细看诗篇 23"
+  - "创世记 22 章什么意思"
+examples_en:
+  - "Study Romans 8:1-11"
+  - "Walk me through Psalm 23"
+  - "What does Genesis 22 mean?"
+author: 军哥
 slug: expository-passage-study
 displayName: 经文逐段深度解经
 description: 对一段经文做逐段解经研究。用户给出一处经文范围（如"研经罗马书 8:1-11""帮我细看诗篇 23""创世记 22 章什么意思"），希望得到有文本观察、有历史背景、有原文词研、有正典脉络、最终落到基督与福音和具体应用的深度研究时使用。不适用于只需经文原文（直接用检索工具）、主题式串珠查经（用 topical-bible-study）或讲章撰写（用讲道类技能）的场景。

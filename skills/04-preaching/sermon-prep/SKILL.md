@@ -1,5 +1,18 @@
 ---
 name: sermon-prep
+display_name: 讲章预备
+display_name_en: Sermon Preparation
+description_zh: 把一段经文预备成一篇可上台讲的讲章，走经文驱动式讲道：从解经到命题、大纲、逐字稿的全流程帮助。
+description_en: Prepare a scripture passage into a preachable sermon using expository preaching, covering exegesis, proposition, outline and full manuscript.
+examples_zh:
+  - "主日崇拜讲腓立比书 2:1-11"
+  - "为团契查经准备一篇讲章"
+  - "按赛 53 写节期分享稿"
+examples_en:
+  - "Prepare a Sunday sermon on Philippians 2:1-11"
+  - "Build a Bible-study message for our group"
+  - "Write a seasonal message from Isaiah 53"
+author: 军哥
 slug: sermon-prep
 displayName: 讲章预备
 description: 把一段经文预备成一篇可上台讲的讲章。用户给出经文范围与场合（主日崇拜、团契查经、丧礼婚礼、节期聚会、小组分享），需要从解经到命题、大纲、逐字稿的全流程帮助时使用。本技能走经文驱动式讲道（expository preaching）：讲章结构服从经文结构，应用从经文里长出来。不适用于学术解经报告（用 expository-passage-study）、跨卷主题查经（用 topical-bible-study，其产出可作本技能输入）或讲章之外的信仰写作。

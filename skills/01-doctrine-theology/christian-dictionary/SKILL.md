@@ -1,5 +1,18 @@
 ---
 name: christian-dictionary
+display_name: 《基督教大辞典》核心教义检索
+display_name_en: Christian Dictionary Core Doctrines
+description_zh: 检索《基督教大辞典》经逐页核对的旗舰词条：三位一体、上帝、圣经、圣灵、救赎等教义的辞典释义与页码定位，附绪论教义综述与凡例体例。
+description_en: "Search verified flagship entries from The Dictionary of Christianity: Trinity, God, Bible, Holy Spirit, redemption and more, with page locators, plus the introduction's doctrinal survey and editorial conventions."
+examples_zh:
+  - "《基督教大辞典》怎么解释三位一体"
+  - "救赎论在该辞典第几页"
+  - "查上帝论相关词条原文"
+examples_en:
+  - "How does the dictionary explain the Trinity?"
+  - "On what page is soteriology?"
+  - "Look up the entry on divine attributes"
+author: 军哥
 slug: christian-dictionary
 displayName: 《基督教大辞典》核心教义检索
 summary: 检索《基督教大辞典》（上海辞书出版社，2010）经 OCR 逐页核对的核心词条：三位一体、上帝、圣经、圣灵、救赎等旗舰教义的辞典释义与页码定位，并给出绪论教义综述与凡例体例。
@@ -11,9 +24,9 @@ version: 0.2.0
 reviewed_by: 老K
 reviewed_at: 2026-10-10
 sources:
-  - references/christian-dictionary/front-matter-notes.md
-  - references/christian-dictionary/structure-index.md
-  - references/christian-dictionary/core-doctrines.md
+  - references/front-matter-notes.md
+  - references/structure-index.md
+  - references/core-doctrines.md
   - 《基督教大辞典》原书扫描件（上海辞书出版社，2010）
 bible_anchor: 使徒信经
 ---

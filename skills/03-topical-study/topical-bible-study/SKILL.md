@@ -1,5 +1,18 @@
 ---
 name: topical-bible-study
+display_name: 主题串珠查经
+display_name_en: Topical Bible Study
+description_zh: 围绕一个主题做跨书卷的串珠查经，产出旧约到新约的启示脉络、锚点经文深读、神学命题总结与应用。
+description_en: Cross-book topical Bible study producing the Old-Testament-to-New-Testament thread, deep dives on anchor verses, theological propositions and application.
+examples_zh:
+  - "恩典这个主题圣经整体怎么讲"
+  - "查经：苦难"
+  - "梳理祷告的经文脉络"
+examples_en:
+  - "How does Scripture teach grace overall?"
+  - "Study the theme of suffering"
+  - "Trace the biblical thread on prayer"
+author: 军哥
 slug: topical-bible-study
 displayName: 主题串珠查经
 description: 围绕一个主题做跨书卷的串珠查经。用户给出一个主题（如"恩典""苦难""金钱观""祷告""圣灵的工作"），想系统了解圣经整体怎么讲这个主题时使用。产出旧约到新约的启示脉络、锚点经文深读、神学命题总结与应用。不适用于单一经段的逐节解释（用 expository-passage-study）、只要某节经文原文（直接检索）或人物/书卷背景速查（用词典类技能）。

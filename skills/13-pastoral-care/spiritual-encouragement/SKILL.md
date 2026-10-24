@@ -1,5 +1,18 @@
 ---
 name: spiritual-encouragement
+display_name: 属灵勉励
+display_name_en: Spiritual Encouragement
+description_zh: 针对具体处境给出以经文为依据的属灵勉励：对准处境的一句话、三方面勉励、祷告方向与可行的一步。
+description_en: "Scripture-grounded spiritual encouragement for a specific situation: one pointed word, three encouragements, a direction for prayer and one actionable step."
+examples_zh:
+  - "服事枯干了，给点鼓励"
+  - "失业很焦虑，求安慰"
+  - "刚失去亲人，想知道怎么走过这段"
+examples_en:
+  - "I'm burnt out in ministry; I need encouragement"
+  - "I'm anxious about job loss"
+  - "I just lost someone and need to get through this"
+author: 军哥
 slug: spiritual-encouragement
 displayName: 属灵勉励
 description: 针对具体处境给出以经文为依据的属灵勉励。用户描述自己或他人的光景（疲乏、灰心、服事枯干、疾病中的惧怕、关系受伤、失去亲人、失业、长期看不到果效），希望得到不是空话的安慰与力量时使用。产出经文、对准处境的一句话、三方面的勉励、祷告方向、可行的一步。危机情形（伤害自己的念头、严重抑郁、家暴与虐待、精神疾病发作）不适用纯属灵勉励，技能会转为引导寻求专业帮助与牧者面谈。

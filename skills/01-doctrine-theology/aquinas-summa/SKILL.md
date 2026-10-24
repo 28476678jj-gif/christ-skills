@@ -1,5 +1,18 @@
 ---
 name: aquinas-summa
+display_name: 阿奎那《神学大全》核心教义检索
+display_name_en: Aquinas Summa Theologiae Core Doctrines
+description_zh: 检索托马斯·阿奎那《神学大全》已结构化的知识：五路证明、神的单纯性、三位一体内在出发、灵魂与终极目的、永恒法与自然法、恩宠信德爱德、道成肉身，并可在 590 余问结构中定位主题。
+description_en: "Search structured knowledge from Aquinas's Summa Theologiae: the Five Ways, divine simplicity, the immanent Trinity, the soul and the ultimate end, eternal and natural law, grace, faith, charity and the Incarnation, with topic lookup across its 590+ questions."
+examples_zh:
+  - "《神学大全》五路证明怎么说的"
+  - "阿奎那怎么论证神是单纯的"
+  - "定位《大全》里论信德与爱德的那一问"
+examples_en:
+  - "How does Aquinas present the Five Ways?"
+  - "How does he argue that God is simple?"
+  - "Locate the question on faith and charity"
+author: 军哥
 slug: aquinas-summa
 displayName: 阿奎那《神学大全》核心教义检索
 summary: 检索托马斯·阿奎那《神学大全》已整理的知识：五路证明、神的单纯性、三位一体内在出发、灵魂与终极目的、永恒法/自然法/人法/神法、恩宠、信德、爱德、道成肉身，并可在 590 余问结构中定位主题。
@@ -11,8 +24,8 @@ version: 0.1.0
 reviewed_by: 老K
 reviewed_at: 2026-10-10
 sources:
-  - references/aquinas-summa/structure-index.md（589 问结构地图，中文版全集抽取）
-  - references/aquinas-summa/core-doctrines.md（12 旗舰问题深度精义，New Advent 英译本转写）
+  - references/structure-index.md（589 问结构地图，中文版全集抽取）
+  - references/core-doctrines.md（12 旗舰问题深度精义，New Advent 英译本转写）
   - New Advent 公有领域英译本（newadvent.org/summa，URL 形如 1<part><qq>：1002=第一集第二问、2001=二集一部第一问、3001=二集二部第一问、4001=第三集第一问）
 bible_anchor: 歌罗西书 2:3
 ---
@@ -45,8 +58,8 @@ bible_anchor: 歌罗西书 2:3
 
 ## 工作流程
 
-1. **先查结构**：扫 `references/aquinas-summa/structure-index.md` 的五大部目录，定位题号、册次、条数。
-2. **再取论点**：命中 12 旗舰问题者，读 `references/aquinas-summa/core-doctrines.md` 对应节，忠实转述阿奎那主张，不得夹带本库未标明的判定。
+1. **先查结构**：扫 `references/structure-index.md` 的五大部目录，定位题号、册次、条数。
+2. **再取论点**：命中 12 旗舰问题者，读 `references/core-doctrines.md` 对应节，忠实转述阿奎那主张，不得夹带本库未标明的判定。
 3. **标注传统**：阿奎那属**天主教多马主义**；凡其说与使徒信经/尼西亚信经一致者，标「信经认信」；凡其天主教特有发展（圣事、恩典—功德中介等），标「多马传统，以圣经为最终权威检验」，不得升格为普世定论。
 4. **扩展指引**：未覆盖之问，按 URL 规则到 New Advent 补译，并同样执行第 3 步的锚点标注。
 
