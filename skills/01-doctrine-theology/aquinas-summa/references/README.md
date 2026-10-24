@@ -24,4 +24,4 @@
 
 ## 配套技能
 
-检索入口见技能 `skills/01-doctrine-theology/aquinas-summa/SKILL.md`。
+检索入口见本包的 `SKILL.md`（技能标识 `aquinas-summa`）。

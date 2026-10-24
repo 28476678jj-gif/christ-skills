@@ -7,13 +7,13 @@
 
 数据库定位顺序：
 1. 环境变量 CHRIST_SKILLS_DATA（指向含 .bible 文件的目录）
-2. 本仓库 data/bibles/（按脚本所在位置推导）
-3. 环境变量 BIBLEMATE_DATA 或 ~/biblemate/data/bibles（本地多译本）
+2. 本技能包内的经文库目录（按脚本所在位置推导）
+3. 环境变量 BIBLEMATE_DATA 指向的本地多译本目录
 
 用法：
-    python tools/verse_check.py file1.md [file2.md ...]
-    python tools/verse_check.py skills/            # 递归扫描全部 md
-    python tools/verse_check.py --version CUVS1919 skills/
+    python scripts/verse_check.py file1.md [file2.md ...]
+    python scripts/verse_check.py skills/            # 递归扫描全部 md
+    python scripts/verse_check.py --version CUVS1919 skills/
 退出码：0 通过；1 存在 error；2 用法错误或数据库缺失。
 """
 import difflib
@@ -250,11 +250,11 @@ def main():
         version = args[i + 1]
         del args[i:i + 2]
     if not args:
-        print("Usage: python tools/verse_check.py [--version CUVS1919] <md 文件或目录> [...]")
+        print("Usage: python scripts/verse_check.py [--version CUVS1919] <md 文件或目录> [...]")
         sys.exit(2)
     db_path = find_bible_db(version)
     if not db_path:
-        print(f"Error: 找不到 {version} 数据库。请构建 data/bibles/ 或设置 CHRIST_SKILLS_DATA。")
+        print(f"Error: 找不到 {version} 数据库。请将经文库放入本技能包内，或设置 CHRIST_SKILLS_DATA。")
         sys.exit(2)
     db = BibleDB(db_path)
     total_errors, total_warnings, total_refs, files = 0, 0, 0, 0

@@ -8,9 +8,9 @@
 只替换引用标注本身，不动引文内容。
 
 用法：
-    python tools/format_references.py 文档.md                    # 预览（默认，不改写）
-    python tools/format_references.py 文档.md --style abbr       # 输出规范简称
-    python tools/format_references.py 目录/ --style full --inplace
+    python scripts/format_references.py 文档.md                    # 预览（默认，不改写）
+    python scripts/format_references.py 文档.md --style abbr       # 输出规范简称
+    python scripts/format_references.py 目录/ --style full --inplace
 """
 import argparse
 import os

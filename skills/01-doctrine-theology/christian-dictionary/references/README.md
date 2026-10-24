@@ -27,4 +27,4 @@
 
 ## 配套技能
 
-检索入口见技能 `skills/01-doctrine-theology/christian-dictionary/SKILL.md`（`doctrine_status: disputed`，教派差异须标注）。
+检索入口见本包的 `SKILL.md`（技能标识 `christian-dictionary`，`doctrine_status: disputed`，教派差异须标注）。

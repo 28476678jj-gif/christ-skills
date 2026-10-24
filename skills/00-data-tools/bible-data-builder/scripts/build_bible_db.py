@@ -6,9 +6,9 @@
 Book 为新教正典 1-66 序号（1=创世记 ... 66=启示录），与 biblemate 检索脚本兼容。
 
 用法：
-    python tools/build_bible_db.py \
-        --src data/sources/chi-cuv-simp.usfx.xml \
-        --out data/bibles/CUVS1919.bible \
+    python scripts/build_bible_db.py \
+        --src <本地源文件路径>.usfx.xml \
+        --out <本地输出路径>.bible \
         --abbr CUVS1919 --title "和合本 1919（简体）" --license "Public Domain"
 """
 import argparse

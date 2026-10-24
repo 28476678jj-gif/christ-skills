@@ -2,8 +2,8 @@
 """技能结构与 frontmatter 校验器（零第三方依赖）。
 
 用法：
-    python tools/lint_skill.py skills/02-exegesis/expository-passage-study
-    python tools/lint_skill.py skills/          # 递归校验全部技能目录
+    python scripts/lint_skill.py <技能目录>
+    python scripts/lint_skill.py <技能根目录>    # 递归校验全部技能目录
 
 校验规则（任一失败即非零退出）：
 1. 目录含 SKILL.md
@@ -118,7 +118,7 @@ def iter_skill_dirs(root):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python tools/lint_skill.py <技能目录或根目录> [...]")
+        print("Usage: python scripts/lint_skill.py <技能目录或根目录> [...]")
         sys.exit(2)
     all_errors = []
     checked = 0
